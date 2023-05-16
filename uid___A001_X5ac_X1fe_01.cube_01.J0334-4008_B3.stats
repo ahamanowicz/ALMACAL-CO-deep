@@ -1,0 +1,10 @@
+cubename	uid___A001_X5ac_X1fe_01.cube_01.J0334-4008_B3.fits
+rms	0.000175862867878
+cell [arcsec, arcsec]	[ 0.00015556  0.00015556]
+beam_axes [pix, pix]	3.45547603709 2.98326952117
+beam_PA [deg]	88.9186172485
+image_size [pix pix]	192 192
+channels	239
+frequency_range [GHz]		87.9175188031 84.1987688031
+channel_width [GHz]	0.015559623431
+Integration time: 2667.16800022
