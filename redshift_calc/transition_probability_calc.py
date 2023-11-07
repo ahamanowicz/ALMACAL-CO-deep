@@ -5,8 +5,8 @@ import matplotlib as mpl
 
 #################################################
 #Code parameters
-mpl.rc ('xtick',labelsize=18)
-mpl.rc ('ytick',labelsize=18)
+mpl.rc('xtick',labelsize=18)
+mpl.rc('ytick',labelsize=18)
 
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif')
@@ -15,7 +15,7 @@ plt.rc('font', family='serif')
 ######p
 print("################################################################################ \n Returns probability of the observed line to be a certain CO transition. \n Probabilities are based on the population of galaxies generated from Shark SAMS (Lagos et al 2018)\n for a galaxies with log(Molecular Mass) > 9.5.\n################################################################################")
 
-freq0 =float(raw_input("Observed frequency of the line (central in GHz): "))
+freq0 = float(raw_input("Observed frequency of the line (central in GHz): "))
 flux = np.log10(float(raw_input("Observed integrated flux (in mJy km/s): ")))
 
 #print M
@@ -28,7 +28,7 @@ CO_label = ["CO(1-0)","CO(2-1)","CO(3-2)","CO(4-3)","CO(5-4)","CO(6-5)","CO(7-6)
 print("central frequency [GHz]", freq0, "Integrated flux [mJy km/s]", flux)
 
 #### Create the table of possible transitions 
-transition_prob= np.zeros((np.size(CO_label), 4))
+transition_prob = np.zeros((np.size(CO_label), 4))
 #col 0 - J, col1 - z col2 - flux col3 - probability for the transition
 
 ##load transition bins
